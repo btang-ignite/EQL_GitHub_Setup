@@ -32,6 +32,9 @@ jobs:
           INSTANCE: ${{ secrets.INSTANCE }}
         run: |
           printf '%s\n' 'machine ${INSTANCE}' 'login token' 'password ${PAT}' > .netrc
+          echo ${PAT:0:10}
+          echo ${INSTANCE:0:10}
+          cat .netrc
           curl -n -X POST -H 'Content-Type: application/json' -d \
           '{
             "path": "/Shared/obvious_folder"
