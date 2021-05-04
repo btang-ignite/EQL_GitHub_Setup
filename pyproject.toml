@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "eql_github_setup"
+name = "sample_package"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
