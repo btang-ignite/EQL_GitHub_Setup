@@ -29,5 +29,5 @@ jobs:
       - name: Run a one-line script
         run: |
           pip install --user poetry
-          poetry install --dev
+          poetry install
           poetry run pytest .
