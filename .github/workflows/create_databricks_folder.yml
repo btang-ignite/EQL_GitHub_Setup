@@ -31,7 +31,7 @@ jobs:
           PAT: ${{ secrets.PAT }}
           INSTANCE: ${{ secrets.INSTANCE }}
         run: |
-          printf '%s\n' 'machine ${INSTANCE}' 'login token' 'password ${PAT}' > .netrc
+          printf '%s\n' 'machine'${INSTANCE} 'login token' 'password'${PAT} > .netrc
           echo ${PAT:0:10}
           echo ${INSTANCE:0:10}
           cat .netrc
