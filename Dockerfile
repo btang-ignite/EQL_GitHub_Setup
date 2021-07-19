@@ -1,4 +1,4 @@
-FROM databricksruntime/python:7.x
+FROM databricksruntime/python:9.x
 
 COPY ./requirements.txt ./
 RUN /databricks/conda/envs/dcs-minimal/bin/pip install -r requirements.txt
